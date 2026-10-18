@@ -9,7 +9,6 @@ if (isset($_GET['hapus'])) {
     exit;
 }
 
-// Mengambil data menggunakan VIEW sesuai instruksi dosen
 $stmt = $pdo->query("SELECT * FROM vw_barang");
 $barangs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
